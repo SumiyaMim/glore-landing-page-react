@@ -27,7 +27,7 @@ const Navbar = () => {
             </div>
             <div className="relative">
                 <HiOutlineShoppingBag className="text-2xl" />
-                <span className="absolute -bottom-2 -right-2 text-xs bg-[#c03c79] text-white rounded-full w-5 h-5 flex items-center justify-center">
+                <span className="absolute -bottom-2 -right-2 text-xs bg-[#C43882] text-white rounded-full w-5 h-5 flex items-center justify-center">
                     0
                 </span>
             </div>
