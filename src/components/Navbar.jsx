@@ -5,7 +5,7 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 
 const Navbar = () => {
   return (
-    <div class="bg-[#faced9] py-3 lg:py-4 px-2 md:px-9 lg:px-20 hidden md:block">
+    <div class="bg-[#fcd4de] py-3 lg:py-4 px-4 md:px-9 lg:px-20 hidden md:block">
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-9">
             <div className="flex item-center gap-2">
