@@ -5,10 +5,10 @@ import { LuSearch } from "react-icons/lu";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { GrGroup } from "react-icons/gr";
 import { IoHome } from "react-icons/io5";
-import { SlEarphonesAlt } from "react-icons/sl";
+import { PiHeadsetBold } from "react-icons/pi";
 
 const Navbar = () => {
-  
+
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -61,7 +61,7 @@ const Navbar = () => {
       </div>
 
       {/* BOTTOM NAVBAR: for small devices only */}
-      <div className="fixed bottom-0 left-0 w-full bg-white shadow md:hidden z-50 py-1 px-6 border-t border-t-slate-100">
+      <div className="fixed bottom-0 left-0 w-full bg-white shadow md:hidden z-50 py-1 px-5 border-t border-t-slate-100">
         <div className="flex justify-between items-center gap-2 text-xs">
           <div className="flex items-center gap-11">
             <div className="flex flex-col items-center">
@@ -82,7 +82,7 @@ const Navbar = () => {
               <h4>About</h4>
             </div>
             <div className="flex flex-col items-center">
-              <SlEarphonesAlt className="text-3xl" />
+              <PiHeadsetBold  className="text-3xl" />
               <h4>Contact</h4>
             </div>
           </div>
