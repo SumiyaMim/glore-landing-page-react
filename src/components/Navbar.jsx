@@ -8,6 +8,7 @@ import { IoHome } from "react-icons/io5";
 import { SlEarphonesAlt } from "react-icons/sl";
 
 const Navbar = () => {
+  
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
