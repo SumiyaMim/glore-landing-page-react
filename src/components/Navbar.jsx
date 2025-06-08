@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <>
       {/* TOP NAVBAR: for medium and large devices */}
-      <div
+      <nav
         className={`hidden md:block fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           isScrolled ? "bg-white shadow-lg" : "bg-[#fcd4de]"
         } py-3 lg:py-4 px-4 md:px-9 lg:px-20`}
@@ -58,10 +58,10 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </div>
+      </nav>
 
       {/* BOTTOM NAVBAR: for small devices only */}
-      <div className="fixed bottom-0 left-0 w-full bg-white shadow md:hidden z-50 py-1 px-5 border-t border-t-slate-100">
+      <nav className="fixed bottom-0 left-0 w-full bg-white shadow md:hidden z-50 py-1 px-5 border-t border-t-slate-100">
         <div className="flex justify-between items-center gap-2 text-xs">
           <div className="flex items-center gap-11">
             <div className="flex flex-col items-center">
@@ -87,7 +87,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </div>
+      </nav>
     </>
   );
 };
