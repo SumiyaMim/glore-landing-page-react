@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { RiShoppingBag2Fill } from "react-icons/ri";
 import { CgMenuLeftAlt } from "react-icons/cg";
 import { LuSearch } from "react-icons/lu";
@@ -10,6 +11,9 @@ import { PiHeadsetBold } from "react-icons/pi";
 const Navbar = () => {
 
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+
+  const isCollection = location.pathname.startsWith("/collection/");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +28,11 @@ const Navbar = () => {
       {/* TOP NAVBAR: for medium and large devices */}
       <nav
         className={`hidden md:block fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-          isScrolled ? "bg-white shadow-lg" : "bg-[#fcd4de]"
+          isCollection
+            ? "bg-[#ffe9ee]"
+            : isScrolled
+            ? "bg-white shadow-lg"
+            : "bg-[#fcd4de]"
         } py-3 lg:py-4 px-4 md:px-9 lg:px-20`}
       >
         <div className="flex justify-between items-center">
@@ -82,7 +90,7 @@ const Navbar = () => {
               <h4>About</h4>
             </div>
             <div className="flex flex-col items-center cursor-pointer">
-              <PiHeadsetBold  className="text-3xl" />
+              <PiHeadsetBold className="text-3xl" />
               <h4>Contact</h4>
             </div>
           </div>
