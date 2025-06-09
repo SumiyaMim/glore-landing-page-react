@@ -17,7 +17,7 @@ const Banner = () => {
             Discover your favorite fashion style and express your uniqueness. ❤️
             </p>
             <div className='flex justify-center items-center'>
-                <button className='bg-[#C43882] text-white rounded-xl px-4 md:px-9 py-1.5 md:py-3 text-base md:text-xl font-medium'>
+                <button className='bg-[#C43882] text-white cursor-pointer rounded-xl px-4 md:px-9 py-1.5 md:py-3 text-base md:text-xl font-medium'>
                     Order Now
                 </button>
             </div>
