@@ -18,6 +18,7 @@ const Collections = () => {
         Stay one step ahead with trending products! Your fashion, your identity — with GloreBD. ❤️
       </p>
       <h3 className="text-xl md:text-2xl font-semibold mb-5">Women Clothing</h3>
+      {/* all products */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
         {collections.map(item => (
           <CollectionCard key={item.id} item={item} />

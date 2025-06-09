@@ -5,24 +5,38 @@ import { FaBagShopping, FaFacebook, FaInstagram, FaWhatsapp, FaTwitter, FaFacebo
 import { MdLocalShipping } from "react-icons/md";
 import { IoMdRibbon } from "react-icons/io";
 import { RiCashFill } from "react-icons/ri";
+import { IoHome } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 const Collection = () => {
 
   const { id } = useParams();
   const collections = useLoaderData();
+  const navigate = useNavigate();
 
   const item = collections.find((collection) => collection.id === id);
 
   return (
     <div className="bg-[#ffe9ee] md:pt-32 md:pb-20 md:px-9 lg:px-20">
         <div className="flex flex-col md:flex-row gap-12 items-start">
-            <div className="w-full h-screen">
+            {/* product image */}
+           <div className="relative w-full h-screen">
+                {/* home icon for small device */}
+                <button
+                    onClick={() => navigate("/")}
+                    className="absolute top-4 left-4 z-50 text-white bg-[#C43882] rounded-full p-2 md:hidden cursor-pointer"
+                    aria-label="Go to Home"
+                    style={{ backgroundColor: 'rgba(160, 45, 110, 0.5)' }}
+                >
+                    <IoHome className="text-2xl text-white" />
+                </button>
                 <img
                     src={item.img}
                     alt={item.name}
-                    className="w-full h-full md:h-[750px] lg:h-full rounded cursor-pointer"
+                    className="w-full h-full md:h-[780px] lg:h-full rounded cursor-pointer object-cover"
                 />
             </div>
+            {/* product details */}
             <div className="w-full px-5 pb-14 md:p-0">
                 <h1 className="text-2xl md:text-xl lg:text-3xl font-bold mb-5">{item.name}</h1>
                 <div className="flex gap-1 items-center mb-5">

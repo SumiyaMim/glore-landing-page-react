@@ -2,6 +2,7 @@ const Banner = () => {
   return (
     <div className='bg-[#fcd4de] py-8 md:py-20 md:pb-20 px-4 md:px-9 lg:px-20'>
     <div className='bg-[#ffe9ee] rounded-4xl flex justify-between items-center gap-4 md:gap-6 lg:gap-0 pt-2 md:pt-5 px-1 md:px-2 lg:px-14'>
+        {/* banner details */}
         <div className='pb-5'>
             <div className='flex justify-center block md:hidden'>
                 <img src="/src/assets/images/logo.png" alt="logo" className="w-32 mb-5" />
@@ -22,6 +23,7 @@ const Banner = () => {
                 </button>
             </div>
         </div>
+        {/* banner image */}
         <div>
             <img
                 src="/src/assets/images/hero-img.png"
