@@ -29,7 +29,9 @@ const Navbar = () => {
       <nav
         className={`hidden md:block fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           isCollection
-            ? "bg-[#ffe9ee]"
+            ? isScrolled
+              ? "bg-white shadow-lg"
+              : "bg-[#ffe9ee]"
             : isScrolled
             ? "bg-white shadow-lg"
             : "bg-[#fcd4de]"
