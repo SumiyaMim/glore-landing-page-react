@@ -1,3 +1,5 @@
+import { FaShoppingCart } from "react-icons/fa";
+
 const Banner = () => {
   return (
     <div className='bg-[#fcd4de] py-8 md:py-20 md:pb-20 px-4 md:px-9 lg:px-20'>
@@ -30,6 +32,15 @@ const Banner = () => {
                 alt="hero"
                 className="h-72 md:h-full w-[250px] md:w-[450px] rounded-r-3xl pt-3 md:pt-0"
             />
+        </div>
+      </div>
+       {/* small device fixed cart icon */}
+      <div className="fixed right-4 top-1/2 transform -translate-y-1/2 md:hidden z-50 cursor-pointer bg-white rounded-xl p-2">
+        <div className="relative">
+          <FaShoppingCart className="text-xl" />
+          <span className="absolute -top-3 -right-3 text-xs bg-[#38BDF8] text-white rounded-full w-4 h-4 flex items-center justify-center">
+            0
+          </span>
         </div>
       </div>
     </div>
