@@ -7,6 +7,7 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { GrGroup } from "react-icons/gr";
 import { IoHome } from "react-icons/io5";
 import { PiHeadsetBold } from "react-icons/pi";
+import { FaShoppingCart } from "react-icons/fa";
 
 const Navbar = () => {
 
@@ -71,33 +72,51 @@ const Navbar = () => {
       </nav>
 
       {/* BOTTOM NAVBAR: for small devices only */}
-      <nav className="fixed bottom-0 left-0 w-full bg-white shadow md:hidden z-50 py-1 px-5 border-t border-t-slate-100">
-        <div className="flex justify-between items-center gap-2 text-xs">
-          <div className="flex items-center gap-11">
-            <div className="flex flex-col items-center cursor-pointer">
-              <CgMenuLeftAlt className="text-3xl" />
-              <h4>Menu</h4>
-            </div>
-            <div className="flex flex-col items-center cursor-pointer">
-              <RiShoppingBag2Fill className="text-3xl" />
-              <h4>Shop</h4>
-            </div>
-          </div>
-          <div className="bg-slate-50 border-2 border-slate-200 p-4 rounded-full -translate-y-10 shadow-xl cursor-pointer">
-            <IoHome className="text-3xl text-[#C43882]" />
-          </div>
-          <div className="flex items-center gap-11">
-            <div className="flex flex-col items-center cursor-pointer">
-              <GrGroup className="text-3xl" />
-              <h4>About</h4>
-            </div>
-            <div className="flex flex-col items-center cursor-pointer">
-              <PiHeadsetBold className="text-3xl" />
-              <h4>Contact</h4>
+      {isCollection ? (
+        // If on collection page, show only Order Now button on small devices
+        <nav className="fixed bottom-0 left-0 w-full bg-white md:hidden z-50 py-3 px-5">
+          <div className="flex items-center gap-4">
+            <button className="bg-[#C43882] text-white cursor-pointer rounded-3xl px-2 py-2 w-full text-base font-medium">
+              Order Now
+            </button>
+            <div className="relative cursor-pointer">
+              <FaShoppingCart className="text-2xl" />
+              <span className="absolute -top-2 -right-2 text-xs bg-[#38BDF8] text-white rounded-full w-5 h-5 flex items-center justify-center">
+                0
+              </span>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      ) : (
+        // Normal bottom navbar for other pages
+        <nav className="fixed bottom-0 left-0 w-full bg-white shadow md:hidden z-50 py-1 px-5 border-t border-t-slate-100">
+          <div className="flex justify-between items-center gap-2 text-xs">
+            <div className="flex items-center gap-11">
+              <div className="flex flex-col items-center cursor-pointer">
+                <CgMenuLeftAlt className="text-3xl" />
+                <h4>Menu</h4>
+              </div>
+              <div className="flex flex-col items-center cursor-pointer">
+                <RiShoppingBag2Fill className="text-3xl" />
+                <h4>Shop</h4>
+              </div>
+            </div>
+            <div className="bg-slate-50 border-2 border-slate-200 p-4 rounded-full -translate-y-10 shadow-xl cursor-pointer">
+              <IoHome className="text-3xl text-[#C43882]" />
+            </div>
+            <div className="flex items-center gap-11">
+              <div className="flex flex-col items-center cursor-pointer">
+                <GrGroup className="text-3xl" />
+                <h4>About</h4>
+              </div>
+              <div className="flex flex-col items-center cursor-pointer">
+                <PiHeadsetBold className="text-3xl" />
+                <h4>Contact</h4>
+              </div>
+            </div>
+          </div>
+        </nav>
+      )}
     </>
   );
 };

@@ -13,7 +13,6 @@ const Collection = () => {
 
   const item = collections.find((collection) => collection.id === id);
 
-
   return (
     <div className="bg-[#ffe9ee] md:pt-32 md:pb-20 md:px-9 lg:px-20">
         <div className="flex flex-col md:flex-row gap-12 items-start">
@@ -25,7 +24,7 @@ const Collection = () => {
                 />
             </div>
             <div className="w-full px-5 pb-14 md:p-0">
-                <h1 className="text-3xl md:text-xl lg:text-3xl font-bold mb-5">{item.name}</h1>
+                <h1 className="text-2xl md:text-xl lg:text-3xl font-bold mb-5">{item.name}</h1>
                 <div className="flex gap-1 items-center mb-5">
                     <FaStar className="text-[#F59E0B] text-lg"/>
                     <FaStar className="text-[#F59E0B] text-lg"/>
