@@ -29,11 +29,11 @@ const Navbar = () => {
       >
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-9">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 cursor-pointer">
               <CgMenuLeftAlt className="text-2xl" />
               <h4 className="font-medium">Menu</h4>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 cursor-pointer">
               <LuSearch className="text-2xl" />
               <h4 className="font-medium">Search</h4>
             </div>
@@ -42,15 +42,15 @@ const Navbar = () => {
             <img
               src="/src/assets/images/logo.png"
               alt="logo"
-              className="w-36"
+              className="w-36 cursor-pointer"
             />
           </div>
           <div className="flex items-center gap-6">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 cursor-pointer">
               <RiShoppingBag2Fill className="text-2xl" />
               <h4 className="font-medium">Shop</h4>
             </div>
-            <div className="relative">
+            <div className="relative cursor-pointer">
               <HiOutlineShoppingBag className="text-2xl" />
               <span className="absolute -bottom-2 -right-2 text-xs bg-[#C43882] text-white rounded-full w-5 h-5 flex items-center justify-center">
                 0
@@ -64,24 +64,24 @@ const Navbar = () => {
       <nav className="fixed bottom-0 left-0 w-full bg-white shadow md:hidden z-50 py-1 px-5 border-t border-t-slate-100">
         <div className="flex justify-between items-center gap-2 text-xs">
           <div className="flex items-center gap-11">
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center cursor-pointer">
               <CgMenuLeftAlt className="text-3xl" />
               <h4>Menu</h4>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center cursor-pointer">
               <RiShoppingBag2Fill className="text-3xl" />
               <h4>Shop</h4>
             </div>
           </div>
-          <div className="bg-slate-50 border-2 border-slate-200 p-4 rounded-full -translate-y-10 shadow-xl">
+          <div className="bg-slate-50 border-2 border-slate-200 p-4 rounded-full -translate-y-10 shadow-xl cursor-pointer">
             <IoHome className="text-3xl text-[#C43882]" />
           </div>
           <div className="flex items-center gap-11">
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center cursor-pointer">
               <GrGroup className="text-3xl" />
               <h4>About</h4>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center cursor-pointer">
               <PiHeadsetBold  className="text-3xl" />
               <h4>Contact</h4>
             </div>
