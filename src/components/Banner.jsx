@@ -1,4 +1,5 @@
 import { FaShoppingCart } from "react-icons/fa";
+import hero from '../assets/images/hero.png'; 
 
 const Banner = () => {
   return (
@@ -28,7 +29,7 @@ const Banner = () => {
         {/* banner image */}
         <div>
             <img
-                src="/src/assets/images/hero-img.png"
+                src={hero}
                 alt="hero"
                 className="h-72 md:h-full w-[250px] md:w-[450px] rounded-r-3xl pt-3 md:pt-0"
             />

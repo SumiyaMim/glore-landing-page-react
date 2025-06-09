@@ -9,6 +9,7 @@ import { IoHome } from "react-icons/io5";
 import { PiHeadsetBold } from "react-icons/pi";
 import { FaShoppingCart } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import logo from '../assets/images/logo.png'; 
 
 const Navbar = () => {
 
@@ -53,7 +54,7 @@ const Navbar = () => {
           </div>
           <div onClick={() => navigate("/")}>
             <img
-              src="/src/assets/images/logo.png"
+              src={logo}
               alt="logo"
               className="w-36 cursor-pointer"
             />

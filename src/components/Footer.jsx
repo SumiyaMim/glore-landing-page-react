@@ -1,5 +1,6 @@
 import { FaFacebookMessenger, FaTwitter } from "react-icons/fa";
 import { FaFacebook, FaInstagram } from "react-icons/fa6";
+import logo from '../assets/images/logo.png';
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
       <div className='grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-10 md:gap-6 lg:gap-11'>
         <div>
             <img
-              src="/src/assets/images/logo.png"
+              src={logo}
               alt="logo"
               className="w-60 mb-7 cursor-pointer"
             />
