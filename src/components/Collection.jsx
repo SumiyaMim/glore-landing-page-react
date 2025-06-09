@@ -33,7 +33,7 @@ const Collection = () => {
                 <img
                     src={item.img}
                     alt={item.name}
-                    className="w-full h-full md:h-[780px] lg:h-full rounded cursor-pointer object-cover"
+                    className="w-full h-auto md:h-[760px] lg:h-full rounded cursor-pointer object-cover lg:object-fill"
                 />
             </div>
             {/* product details */}

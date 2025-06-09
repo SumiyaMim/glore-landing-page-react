@@ -8,11 +8,13 @@ import { GrGroup } from "react-icons/gr";
 import { IoHome } from "react-icons/io5";
 import { PiHeadsetBold } from "react-icons/pi";
 import { FaShoppingCart } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
 
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const isCollection = location.pathname.startsWith("/collection/");
 
@@ -49,7 +51,7 @@ const Navbar = () => {
               <h4 className="font-medium">Search</h4>
             </div>
           </div>
-          <div>
+          <div onClick={() => navigate("/")}>
             <img
               src="/src/assets/images/logo.png"
               alt="logo"
