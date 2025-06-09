@@ -1,5 +1,5 @@
 ### **Live Preview Link:**
-Live Link: 
+Live Link: https://glore-landing-page.netlify.app/
 
 ### **Technology:**
 - React
