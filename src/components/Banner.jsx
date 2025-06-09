@@ -1,5 +1,6 @@
 import { FaShoppingCart } from "react-icons/fa";
 import hero from '../assets/images/hero.png'; 
+import logo from '../assets/images/logo.png'; 
 
 const Banner = () => {
   return (
@@ -8,7 +9,7 @@ const Banner = () => {
         {/* banner details */}
         <div className='pb-5'>
             <div className='flex justify-center block md:hidden'>
-                <img src="/src/assets/images/logo.png" alt="logo" className="w-32 mb-5" />
+                <img src={logo} alt="logo" className="w-32 mb-5" />
             </div>
             <h1 className='text-4xl md:text-5xl lg:text-7xl font-semibold text-center lg:leading-20 mb-4 md:mb-5 lg:mb-8'>New <br /> <span className='text-[#C43882]'>Collection</span></h1>
             <p className="text-sm md:text-lg lg:text-xl text-center mb-3 md:mb-0">
