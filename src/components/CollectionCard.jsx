@@ -21,7 +21,7 @@ const CollectionCard = ({ item }) => {
           <button className="bg-[#C43882] text-white cursor-pointer rounded px-2 md:px-4 py-1 md:py-1.5 text-sm md:text-base font-medium">
             Order Now
           </button>
-          <p className="text-[#C43882] font-semibold text-sm md:text-base">৳{item.price}</p>
+          <p className="text-[#C43882] font-semibold text-sm md:text-base">৳ {item.price}</p>
         </div>
       </div>
     </div>
