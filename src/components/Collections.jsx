@@ -15,7 +15,7 @@ const Collections = () => {
       </div>
       <p className="text-center text-sm md:text-lg font-light text-gray-800">✨ Shine in a New Style! ✨</p>
       <p className="text-center text-sm md:text-lg font-light text-gray-800 mb-10">
-        Stay one step ahead with trending products! Your fashion, your identity — with GloreBD. ❤️
+        Stay one step ahead with trending products! Your fashion, your identity — with <span className="text-[#C43882] font-normal">GloreBD</span>. ❤️
       </p>
       <h3 className="text-xl md:text-2xl font-semibold mb-5">Women Clothing</h3>
       {/* all products */}
